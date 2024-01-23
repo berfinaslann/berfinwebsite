@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-container{ 
+    justify-content: center;
+      padding: 0px;
+      font-size: larger;
+      line-height: 100px;
+      align-items: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 500px;
+    padding-bottom: 100px;
+    color: rgb(0, 0, 0);
+    
+}
+.back{
+    position: absolute;
+    z-index: -99;
+}
+.bb{
+    display: flex;
+    overflow: hidden;
+}
+.bb img{
+    width: 100vw;
+    height: 120vh;
+}
+.header-container{
+    margin: 0;
+    padding: 100;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.pad{
+    padding-right: 2%;
+}
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+}
+.photo-grid-item{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+}
+
+.instagram-button {
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    margin-left: 20px; 
+}
+
+.instagram-button img {
+    width: 30px; 
+    height: 30px; 
+}
+.mesaj {
+    font-size: 25px;
+}
+.saat, .tarih {
+    font-size: 18px;
+    color: #000000;
+    position: fixed;
+    top: 10px;
+}
+
+.saat {
+    right: 130px;
+}
+
+.tarih {
+    right: 10px;
+}
+
+
+
+
+

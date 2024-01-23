@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 500px;
+    padding-bottom: 100px;
+    color: rgb(0, 0, 0);
+}
+.back{
+    position: absolute;
+    z-index: -99;
+}
+.bb{
+    display: flex;
+    overflow: hidden;
+}
+.bb img{
+    width: 150vw;
+    height: 160vh;
+}
+.mesaj{
+    justify-content: center;
+    padding: 300px;
+    font-size: large;
+    line-height: 60px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; bottom: -10px; top: -70px;
+}
+.başlık{
+    justify-content: center;
+    padding: 300px;
+    font-size: 50px;
+    line-height: 0px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; bottom: 10px; top: -150px;
+}
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 1500px;
+    display: flex;
+    justify-content: flex-start;
+}
+.photo-grid-item{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    
+}
+.photo-grid{
+    /* ... */
+    flex-wrap: wrap;
+}
+.anasayfa-button {
+    text-decoration: none;
+    color: #000000;
+    background-color: #aba3a3;
+    padding: 1px 2px;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999; 
+    font-size: small;
+}
+
+.anasayfa-button:hover {
+    background-color: #555;
+}
+

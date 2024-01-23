@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERFİN'İN WEB SİTESİ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="clock.js"></script>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").innerText = timeString;
+
+            var day = now.getDate();
+            var month = now.getMonth() + 1; 
+            
+            var year = now.getFullYear();
+
+            day = (day < 10) ? "0" + day : day;
+            month = (month < 10) ? "0" + month : month;
+
+            var dateString = day + "/" + month + "/" + year;
+            document.getElementById("date").innerText = dateString;
+
+            setTimeout(updateClock, 1000); 
+            
+        }
+        updateClock();
+    </script>
+
+
+    <div class="back">
+        <div class="bb">
+            <img src="https://r.resimlink.com/58W0sR.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu">
+            <div class="mesaj">WEBSITEME HOŞGELDİNİZ</div>
+            <div class="saat" id="clock"></div>
+            <div class="tarih" id="date"></div>
+            <a href="https://www.instagram.com/_berfinaslan_/" target="_blank" class="instagram-button">
+                <img src="Instagram_logo_2022.svg.webp" alt="Instagram"> <!-- Instagram butonu için resim eklendi -->
+            </a>
+        </div>
+    </div>
+
+    <div class="photo-grid-container">
+        <div class="photo-grid">
+        </div>
+    </div>
+
+    <div class="header-container">
+        <div class="header">
+            <a class="pad" href="hakkımda.html">HAKKIMDA</a>
+            <a href="projelerim.html">PROJELERİM</a>
+            <a href="hakkımda.html" target="_blank"></a>
+        </div>
+    </div>
+</body>
+</html>
+
